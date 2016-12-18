@@ -53,6 +53,8 @@ set stl=%f\ %m\ %r\ Line:%l/%L[%p%%]\ Col:%c\ Buf:%n
 syntax enable
 set number
 " colorscheme nuvola
+" colorscheme github
+" colorscheme ampresent
 
 " for vim 7
 set t_Co=256
@@ -63,5 +65,3 @@ if (has("termguicolors"))
 endif
 
 syntax enable
-
-colorscheme github
