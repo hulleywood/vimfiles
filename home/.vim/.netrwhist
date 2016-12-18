@@ -1,6 +1,0 @@
-let g:netrw_dirhistmax  =10
-let g:netrw_dirhist_cnt =4
-let g:netrw_dirhist_1='/root/.homesick/repos/vimfiles'
-let g:netrw_dirhist_2='/root/.homesick/repos/vimfiles/home'
-let g:netrw_dirhist_3='/root/.homesick/repos/vimfiles/home/.vim'
-let g:netrw_dirhist_4='/root/.homesick/repos/vimfiles/home/.vim/bundle'
