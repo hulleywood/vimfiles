@@ -51,4 +51,16 @@ set laststatus=2
 set stl=%f\ %m\ %r\ Line:%l/%L[%p%%]\ Col:%c\ Buf:%n
 syntax enable
 set number
-colorscheme nuvola
+" colorscheme nuvola
+
+" for vim 7
+set t_Co=256
+
+" for vim 8
+if (has("termguicolors"))
+   set termguicolors
+endif
+
+syntax enable
+
+colorscheme github
