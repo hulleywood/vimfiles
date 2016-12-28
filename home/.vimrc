@@ -2,6 +2,7 @@
 set nocp hlsearch ignorecase incsearch smartcase
 set noerrorbells visualbell
 set ttimeoutlen=0
+set wildignore+=*/tmp/*,*.so,*.swp,*.zip
 
 " Spacing
 set autoindent smartindent shiftround expandtab tabstop=2 shiftwidth=2
