@@ -5,7 +5,7 @@ set ttimeoutlen=0
 set wildignore+=*/tmp/*,*.so,*.swp,*.zip
 
 " Spacing
-set autoindent smartindent shiftround expandtab tabstop=2 shiftwidth=2
+set autoindent smartindent shiftround expandtab tabstop=2 shiftwidth=2 cindent
 
 " Nav
 set scrolloff=5
@@ -20,6 +20,7 @@ set foldlevel=99
 
 " Key mappings
 imap jj <esc>
+
 nmap <space> :
 nnoremap <C-J> <C-W><C-J>
 nnoremap <C-K> <C-W><C-K>
@@ -52,6 +53,7 @@ set laststatus=2
 set stl=%f\ %m\ %r\ Line:%l/%L[%p%%]\ Col:%c\ Buf:%n
 syntax enable
 set number
+
 " colorscheme nuvola
 " colorscheme github
 " colorscheme ampresent
@@ -63,5 +65,3 @@ set t_Co=256
 if (has("termguicolors"))
    set termguicolors
 endif
-
-syntax enable

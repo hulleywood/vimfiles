@@ -1,6 +1,3 @@
 [submodule "home/.vim/bundle/ctrlp.vim"]
 	path = home/.vim/bundle/ctrlp.vim
 	url = https://github.com/ctrlpvim/ctrlp.vim
-[submodule "home/.vim/bundle/github.vim"]
-	path = home/.vim/bundle/github.vim
-	url = https://github.com/albertorestifo/github.vim
