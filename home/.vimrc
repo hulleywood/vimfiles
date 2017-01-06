@@ -5,7 +5,8 @@ set ttimeoutlen=0
 set wildignore+=*/tmp/*,*.so,*.swp,*.zip
 
 " Spacing
-set autoindent smartindent shiftround expandtab tabstop=2 shiftwidth=2 cindent
+set autoindent smartindent shiftround expandtab tabstop=2 shiftwidth=2 cindent smarttab
+au Filetype python setl et ts=4 sw=4
 
 " Nav
 set scrolloff=5
