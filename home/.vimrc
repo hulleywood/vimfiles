@@ -31,7 +31,11 @@ nnoremap ,, za
 nmap ;; oRails.logger.info '*'*80<esc>
 
 " Plugins
-let g:ctrlp_user_command = 'grep -rl "" --exclude-dir=tmp --exclude-dir=coverage --exclude-dir=".*" --exclude-dir=node_modules %s'
+if executable('rg')
+  set grepprg=rg\ --color=never
+  let g:ctrlp_user_command = 'rg %s --files --color=never --glob ""'
+  let g:ctrlp_use_caching = 0
+endif
 
 execute pathogen#infect()
 
