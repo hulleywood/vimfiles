@@ -26,7 +26,11 @@ nnoremap <C-H> <C-W><C-H>
 nnoremap ,, za
 
 " Plugins
-let g:ctrlp_user_command = 'grep -rl "" --exclude-dir=tmp --exclude-dir=coverage --exclude-dir=".*" %s'
+if executable('rg')
+  set grepprg=rg\ --color=never
+  let g:ctrlp_user_command = 'rg %s --files --color=never --glob ""'
+  let g:ctrlp_use_caching = 0
+endif
 
 execute pathogen#infect()
 
